@@ -1,0 +1,9 @@
+@import './Assets/Styles/variables';
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-grey;
+    height: $max-height;
+    width: $max-width;
+}

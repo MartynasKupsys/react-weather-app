@@ -1,0 +1,52 @@
+@import '../../Assets/Styles/variables';
+
+$height: calc((100% - (100% * (2 / 3))) * (2 / 3));
+
+@media screen {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $fontBitter;
+        font-size: $s22;
+        background-color: $orange;
+        height: $height;
+    }
+    span {
+        margin-left: 4px;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .header {
+            font-size: $s18;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .header {
+            font-size: $s18;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .header {
+            font-size: $s14;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+    }
+}

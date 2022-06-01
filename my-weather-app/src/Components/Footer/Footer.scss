@@ -1,0 +1,8 @@
+@import '../../Assets/Styles/variables';
+
+$height: calc(100% - (100% - (100% * (2 / 3))) * (2 / 3) - 100% * (2 / 3));
+
+.footer {
+    background-color: $orange;
+    height: $height;
+}

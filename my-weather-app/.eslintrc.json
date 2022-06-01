@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "semi": [2, "always"],
+        "max-len": ["error", {
+          "code": 200
+        }],
+        "react/jsx-indent": [2, 4, {
+          "checkAttributes": false,
+          "indentLogicalExpressions": true
+        }],
+        "react/jsx-indent-props": [2, 4],
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "react/no-array-index-key": "off",
+        "react/button-has-type": "off",
+        "quotes": ["error", "single", {
+          "allowTemplateLiterals": true
+        }],
+        "no-use-before-define": "off",
+        "jsx-a11y/media-has-caption": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "no-unused-vars": "off",
+        "no-unused-expressions": ["error", {
+          "allowShortCircuit": true,
+          "allowTernary": true
+        }],
+        "no-param-reassign": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "ts": "never",
+            "tsx": "never",
+            "js": "never",
+            "jsx": "never"
+          }
+        ],
+        "comma-dangle": ["error", "never"],
+        "no-restricted-exports": "off",
+        "import/prefer-default-export": "off",
+        "linebreak-style": "off",
+        "react/function-component-definition": [
+          2,
+          {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+          }
+        ],
+        "react/jsx-filename-extension": [1, {
+          "extensions": [".js", ".jsx"]
+        }],
+        "react/react-in-jsx-scope": "off"
+      }
+}
