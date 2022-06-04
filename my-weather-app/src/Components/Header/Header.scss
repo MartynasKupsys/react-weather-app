@@ -41,7 +41,7 @@ $height: calc((100% - (100% * (2 / 3))) * (2 / 3));
 
     @media screen and (max-width: 768px) {
         .header {
-            font-size: $s14;
+            font-size: $s12;
             transition: all 0.5s;
             -webkit-transition: all 0.5s;
             -moz-transition: all 0.5s;

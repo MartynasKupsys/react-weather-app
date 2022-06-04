@@ -20,12 +20,27 @@ $height: calc(100% * (2 / 3));
         width: 30%;
     }
     &-temperature {
-        font-size: $s32;
+        // font-size: $s32;
+        font-size: $p50;
         font-weight: 700;
     }
     &-celcius {
         margin: 0px;
         height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    &-description-date {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &-description {
+        font-weight: 700;
+        font-size: $s12;
     }
 }
 
@@ -37,7 +52,7 @@ $height: calc(100% * (2 / 3));
             align-items: center;
         }
         &-temperature {
-            font-size: $s28;
+            font-size: $p40;
             transition: all 0.3s;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
