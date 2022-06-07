@@ -5,4 +5,28 @@ $height: calc(100% - (100% - (100% * (2 / 3))) * (2 / 3) - 100% * (2 / 3));
 .footer {
     background-color: $orange;
     height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-wind {
+        display: flex;
+        align-items: center;
+        &-data {
+            margin-left: 10px;
+        }
+    }
+    &-humidity {
+        display: flex;
+        align-items: center;
+        &-data {
+            margin-left: 10px;
+        }
+    }
+    &-pressure {
+        display: flex;
+        align-items: center;
+        &-data {
+            margin-left: 10px;
+        }
+    }
 }

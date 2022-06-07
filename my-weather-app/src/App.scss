@@ -1,9 +1,85 @@
 @import './Assets/Styles/variables';
 .app-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: $dark-grey;
+    justify-content: space-evenly;
+    background-color: #fdf1ed;
     height: $max-height;
     width: $max-width;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &-label {
+        height: 33px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+    &-input {
+        border: 0px;
+        height: 33px;
+        font-size: 16px;
+        padding: 0px;
+        border-radius: 10px;
+        text-align: center;
+        margin: 10px;
+        // margin: 0px;
+    }
+
+    &-input:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(246, 183, 166, 0.5);
+    }
+    &-input:focus::placeholder {
+        opacity: 0;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(246, 183, 166, 0.5);
+    }
+    &-submit {
+        height: 33px;
+        font-size: 20px;
+        background-color: #f29a82;
+        border-radius: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 10px;
+        display: inline-block;
+        font-weight: 700;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+            border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        cursor: pointer;
+    }
+
+    &-submit:hover {
+        background-color: $orange;
+        text-decoration: none;
+    }
+
+    &-submit:focus,
+    &-submit.focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(246, 183, 166, 0.5);
+    }
+
+    &-submit.disabled,
+    &-submit:disabled {
+        opacity: 0.65;
+    }
+
+    a.form-submit.disabled,
+    fieldset:disabled a.form-submit {
+        pointer-events: none;
+    }
 }

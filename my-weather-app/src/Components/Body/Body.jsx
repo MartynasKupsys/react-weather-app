@@ -11,7 +11,7 @@ const Body = ({ weather, temperature }) => {
                     <img src={`http://openweathermap.org/img/wn/${weather[0].icon}@4x.png`} alt="" />
                 </div>
                 <div className="body-temperature">
-                    {temperature.temp}
+                    {temperature.temp.toFixed(0)}
                     {' '}
                     <span className="body-celcius">
                         <svg style={{ height: '45px', width: '45px' }}>
