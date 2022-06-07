@@ -36,6 +36,7 @@ const App = () => {
         if (!getCity) {
             return;
         }
+        // axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${getCity}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`)
         axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${getCity}&appid=2a908fec36d7aecec138ac20f6052e16&units=metric`)
             .then((response) => {
                 setWeather((p) => response.data);
