@@ -6,6 +6,7 @@ import './App.scss';
 const App = () => {
     const [weather, setWeather] = useState({});
     const [isData, setIsData] = useState(false);
+
     const [selectCity, setSelectCity] = useState('');
     const [getCity, setGetCity] = useState('');
     const defaultCity = useRef('Vilnius');
@@ -51,12 +52,17 @@ const App = () => {
     return (
 
         <div className="app-container">
+            {message ? (
+                <div style={{ color: 'red' }}>
+                    {message}
+                </div>
+            ) : null}
             <div className="form">
                 {/* <span className="form-label">Enter your city: </span> */}
                 <input className="form-input" onChange={(e) => setSelectCity(e.target.value)} value={selectCity} placeholder="Enter your city..." />
                 <button className="form-submit" onClick={submitHandler}>Submit</button>
             </div>
-            {isData ? (<Container data={weather} message={message} />) : null}
+            {isData ? (<Container data={weather} />) : null}
         </div>
 
     );

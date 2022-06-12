@@ -9,29 +9,29 @@
         height: $max-height * 0.6;
         border-radius: 50px;
         overflow: hidden;
-        &-message {
-            // height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: $p50;
-            font-weight: 700;
-            color: $danger;
-        }
+        // &-message {
+        //     // height: 100%;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     font-size: $p50;
+        //     font-weight: 700;
+        //     color: $danger;
+        // }
     }
 
     @media screen and (max-width: 1200px) {
         .container {
             width: $max-width * 0.4;
             height: $max-height * 0.6;
-            &-message {
-                // height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: $p50;
-                font-weight: 700;
-            }
+            // &-message {
+            //     // height: 100%;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     font-size: $p50;
+            //     font-weight: 700;
+            // }
         }
     }
 
@@ -44,14 +44,14 @@
             -moz-transition: all 0.3s;
             -ms-transition: all 0.3s;
             -o-transition: all 0.3s;
-            &-message {
-                // height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: $p50;
-                font-weight: 700;
-            }
+            // &-message {
+            //     // height: 100%;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     font-size: $p50;
+            //     font-weight: 700;
+            // }
         }
     }
 
@@ -64,14 +64,14 @@
             -moz-transition: all 0.3s;
             -ms-transition: all 0.3s;
             -o-transition: all 0.3s;
-            &-message {
-                // height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 30px;
-                font-weight: 700;
-            }
+            // &-message {
+            //     // height: 100%;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     font-size: 30px;
+            //     font-weight: 700;
+            // }
         }
     }
 }
